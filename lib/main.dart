@@ -172,12 +172,12 @@ class _MyHomePageState extends State<MyHomePage> {
                         height: 60,
                       ),
                     ),
-                    // onDragEnd: (details) {
-                    //   setState(() {
-                    //     _x = details.offset.dx - width * 0.1 - 17;
-                    //     _y = details.offset.dy - 55;
-                    //   });
-                    // },
+                    onDragEnd: (details) {
+                      setState(() {
+                        _x = details.offset.dx - width * 0.1 - 17;
+                        _y = details.offset.dy - 55;
+                      });
+                    },
                   ),
                   SizedBox(height: 10),
                   // Draggable<String>(
